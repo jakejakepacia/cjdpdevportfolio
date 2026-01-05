@@ -43,17 +43,11 @@ h2 {
 
 
 
-.github-calendar {
-  width: 100%;
-  overflow-x: auto; /* allows horizontal scroll on very small screens */
-  padding: 10px 0;
-}
+/* Optional: Extra tweaks for very small screens */
+@media (max-width: 600px) {
+  .container {
+    max-width: 450px;   /* set your desired max width */
+  width: 100%; 
+  }
 
-.github-calendar h3 {
-  margin-bottom: 12px;
-}
-
-/* Optional: hide scrollbar but keep scroll */
-.github-calendar::-webkit-scrollbar {
-  height: 6px;
 }

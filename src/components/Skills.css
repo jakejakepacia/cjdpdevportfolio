@@ -1,11 +1,11 @@
-.frontend-skills{
-    display: flex;
+.my-skills{
+  display: flex;
   align-items: stretch;
   flex-wrap: wrap;           
   gap: 20px;  
 }
 
-.frontend-item {
+.skill-item {
   background-color: transparent;
   border: 1px solid #555;
   border-radius: 8px;
@@ -14,14 +14,69 @@
   cursor: pointer;
 }
 
-.frontend-item img{
-    display: block;
+.skill-item img{
   margin: 0 auto;
   max-width: 30%;            /* responsive image */
   height: 30%;
   margin-top: 10px;
 }
 
-.frontend-item p{
+.skill-item p{
   text-align: center;
+   font-size: 12px; /* smaller size */
+  line-height: 1.4; /* optional for readability */
 }
+
+.tabs-header {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  border: none;
+  background: #eee;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.tab-btn.active {
+  background: #000;
+  color: white;
+}
+
+.tab-btn:hover {
+  background: #ccc;
+}
+
+.tabs-content {
+  min-height: 150px;
+}
+
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Slide-in animation */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.skill-item.slide-in {
+  animation: slideInUp 0.4s forwards;
+}
+

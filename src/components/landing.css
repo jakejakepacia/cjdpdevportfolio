@@ -1,3 +1,4 @@
+/* Existing page-nav */
 .page-nav {
     display: flex;
     align-items: center;
@@ -6,6 +7,36 @@
     margin-bottom: 50px;
     flex-wrap: wrap; /* allow items to wrap on small screens */
 }
+
+.logo{
+      font-size: 30px; /* slightly larger than 12px for readability */
+  line-height: 1.5;
+}
+
+.scheduleCall {
+  display: inline-block; /* allow padding and hover effect */
+  font-size: 14px; /* slightly larger than 12px for readability */
+  line-height: 1.5;
+  cursor: pointer;
+  padding: 8px 16px;
+  border: 1px solid #000; /* black border */
+  border-radius: 6px; /* rounded corners */
+  background-color: #fff; /* white background */
+  color: #000; /* black text */
+  transition: all 0.3s ease; /* smooth hover */
+  font-weight: 500; /* medium weight */
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Hover effect */
+.scheduleCall:hover {
+  background-color: #000; /* black background */
+  color: #fff; /* white text */
+  transform: translateY(-2px); /* slight lift */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* subtle shadow */
+}
+
 
 .about-me {
     display: flex;
@@ -24,18 +55,103 @@
     margin-bottom: -20px;
 }
 
+/* New: Previous Roles Animation */
+.previous-roles {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.6s ease, opacity 0.6s ease;
+}
 
+/* Show class: slide down + fade in */
+.previous-roles.show {
+    max-height: 2000px; /* large enough for content */
+    opacity: 1;
+}
+
+/* Optional: fade out */
+.previous-roles.hide {
+    max-height: 0;
+    opacity: 0;
+}
+
+/* Optional: animate each block inside previous roles */
+.previous-roles .roles,
+.previous-roles .description-p {
+    transform: translateY(20px);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* When container is shown, animate children with stagger */
+.previous-roles.show .roles,
+.previous-roles.show .description-p {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Scheduler Overlay */
+.scheduler-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    opacity: 0;
+    animation: fadeIn 0.3s forwards;
+}
+
+.scheduler-modal {
+    background: white;
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    animation: slideDown 0.3s forwards;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Overlay animations */
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
 
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
     .about-me img {
-        margin-right: 10;
+        margin-right: 10px;
+        width: 200px;
     }
-
 
     .role-description {
         margin-right: 0;
         margin-bottom: 20px;
+    }
+
+    .roles {
+        flex-direction: column;
+        gap: 10px;
     }
 }

@@ -1,0 +1,29 @@
+
+.calendar-wrapper {
+  width: 100%;
+  overflow-x: auto;  /* allows horizontal scroll if needed */
+  -webkit-overflow-scrolling: touch; /* smooth scroll on mobile */
+}
+
+/* Make GitHub calendar responsive */
+.calendar-wrapper .react-activity-calendar {
+  display: block;
+  width: max-content;   /* prevents squishing on larger screens */
+  max-width: 100%;      /* scale down if screen is small */
+  height: auto !important;
+}
+
+/* Optional: scale squares on smaller screens */
+@media (max-width: 768px) {
+  .calendar-wrapper .react-activity-calendar rect {
+    width: 10px !important;
+    height: 10px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .calendar-wrapper .react-activity-calendar rect {
+    width: 8px !important;
+    height: 8px !important;
+  }
+}
