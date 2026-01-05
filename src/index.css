@@ -46,7 +46,7 @@ h2 {
 /* Optional: Extra tweaks for very small screens */
 @media (max-width: 600px) {
   .container {
-    max-width: 450px;   /* set your desired max width */
+    max-width: 300px;   /* set your desired max width */
   width: 100%; 
   }
 
