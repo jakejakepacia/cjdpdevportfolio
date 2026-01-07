@@ -3,6 +3,13 @@ import { useState } from "react";
 import swiftIcon from "../assets/swift-icon.png";
 import reactIcon from "../assets/react-icon.png";
 import csharpIcon from "../assets/c-sharp.png";
+import maui from "../assets/maui.png"
+import xamarin from "../assets/xamarin.png"
+import jwt from "../assets/jwt.png"
+import database from "../assets/database.png"
+import git from "../assets/git.png"
+import github from "../assets/github.png"
+import postman from "../assets/postman.png"
 
 function Skills() {
   const [activeTab, setActiveTab] = useState("Front End");
@@ -10,26 +17,25 @@ function Skills() {
 
   const skillsData = {
     "Front End": [
-      { id: 1, name: "React", icon: reactIcon },
       { id: 2, name: "Swift UIKit", icon: swiftIcon },
       { id: 3, name: "SwiftUI", icon: swiftIcon },
-      { id: 4, name: "Xamarin", icon: swiftIcon },
-      { id: 5, name: ".NET MAUI", icon: swiftIcon },
+      { id: 4, name: "Xamarin", icon: xamarin },
+      { id: 5, name: ".NET MAUI", icon: maui },
+      { id: 1, name: "React", icon: reactIcon }
     ],
     "Back End": [
       { id: 1, name: "C#", icon: csharpIcon },
       { id: 2, name: "Swift", icon: swiftIcon },
       { id: 3, name: "ASP.NET Web API", icon: csharpIcon },
       { id: 4, name: ".NET Framework", icon: csharpIcon },
-      { id: 5, name: "JWT", icon: csharpIcon },
-      { id: 6, name: "SQL Server", icon: csharpIcon },
-      { id: 7, name: "PostgreSQL", icon: csharpIcon },
+      { id: 5, name: "JWT", icon: jwt },
+      { id: 6, name: "SQL Server", icon: database },
+      { id: 7, name: "PostgreSQL", icon: database },
     ],
     "Other": [
-      { id: 1, name: "Git", icon: csharpIcon },
-      { id: 2, name: "GitHub", icon: csharpIcon },
-      { id: 3, name: "Postman", icon: csharpIcon },
-      { id: 4, name: "SSMS / pgAdmin", icon: csharpIcon },
+      { id: 1, name: "Git", icon: git },
+      { id: 2, name: "GitHub", icon: github },
+      { id: 3, name: "Postman", icon: postman },
       { id: 5, name: "Auto Layout / Storyboards", icon: swiftIcon },
     ],
   };

@@ -1,12 +1,19 @@
 import './landing.css'
 import jake from "../assets/jake-home.png"
+import arrow from "../assets/arrow.png"
 import { Typewriter } from "react-simple-typewriter";
 import { useState } from 'react';
 
 function Landing(){
     const [showPrevRoles, setShowRoles] = useState(false);
     const [showScheduler, setShowScheduler] = useState(false); 
+  const [isRotated, setIsRotated] = useState(false);
 
+    const handlePrevRoleClick = () => {
+            setShowRoles(!showPrevRoles)
+            setIsRotated(!isRotated)
+    }
+    
     return(
         <div className="container">
           
@@ -47,10 +54,9 @@ function Landing(){
                      deleteSpeed={50}
                      delaySpeed={1500}/>
                 </strong> <br />
-                  A Mobile & Fullstack Developer | Building Engaging Mobile & Web Apps
+                  A Mobile & Fullstack Developer
                  <br />
-                 Passionate about creating high-performance, user-friendly mobile apps for iOS and Android using Swift, SwiftUI, and cross-platform frameworks.
-                I’m also exploring web development with ASP.NET, React, and Next.js, focusing on clean code, seamless UI/UX, and scalable architectures to bring ideas to life.</p>
+                I build high-performance mobile apps for iOS and Android, along with modern web applications, focusing on clean code, smooth UI/UX, and scalable architecture.</p>
             </div>
 
             <div>
@@ -63,8 +69,14 @@ function Landing(){
                 </p>   
 
                 {/* Toggle Previous Roles */}
-                <p onClick={() => setShowRoles(!showPrevRoles)}
-                    style={{cursor: "pointer"}}><strong>Previous Roles</strong></p>
+                <div className="prev-role-title" onClick={handlePrevRoleClick}>
+                    <img src={arrow} 
+                         alt="arrow"
+                        className={`arrow ${isRotated ? "rotate" : ""}`}
+                         />
+                 <p ><strong>Previous Roles</strong></p>
+                </div>
+            
 
                 {/* Animated Previous Roles */}
                 <div className={`previous-roles ${showPrevRoles ? 'show' : 'hide'}`}>

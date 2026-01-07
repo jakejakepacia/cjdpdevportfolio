@@ -127,6 +127,26 @@
     cursor: pointer;
 }
 
+.prev-role-title{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.prev-role-title img{
+    height: 15px;
+    margin-right: 10px;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.arrow.rotate {
+  transform: rotate(-90deg);
+}
+
+
 /* Overlay animations */
 @keyframes fadeIn {
     to { opacity: 1; }
@@ -140,6 +160,10 @@
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
+    .about-me{
+         align-items: center;
+    }
+    
     .about-me img {
         margin-right: 10px;
         width: 150px;
