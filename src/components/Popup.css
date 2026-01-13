@@ -25,20 +25,24 @@
   box-sizing: border-box;  /* Includes padding in width/height */
 }
 
+.pop-up-header{
+  display: flex;
+}
+
+.pop-up-header img{
+  height: 70px;
+  width: 70px;
+  margin-right: 20px;
+}
+
 .pop-up-body {
   width: 100%;
   max-height: calc(90vh - 80px); /* Adjusts for header/close button space */
-  display: flex;
   margin-top: 10px;        /* Space below close button/header */
   gap: 20px;
 }
 
-.pop-up-body video {
-  width: 100%;
-  height:100%;
-  object-fit: contain;     /* Keeps video aspect ratio without cropping */
-  background: white;       /* Nice background for letterboxed videos */
-}
+
 
 .close-btn {
   background: red;
@@ -50,6 +54,32 @@
   border-radius: 5px;
   font-size: 16px;
 }
+
+.project-preview{
+  display: flex;
+  gap: 10px;
+
+    max-width: 100%;          /* or a fixed value like 700px */
+  overflow-x: auto;         /* enable horizontal scroll */
+  overflow-y: hidden;
+
+  padding-bottom: 10px;     /* space for scrollbar */
+  scroll-behavior: smooth;
+  margin-top: 20px;
+}
+
+.project-preview img{
+  height: 20%;
+  width: 20%;
+}
+
+.project-preview video {
+  width: 20%;
+  height: 20%;
+  object-fit: cover;     /* Keeps video aspect ratio without cropping */
+  background: black;       /* Nice background for letterboxed videos */
+}
+
 
 /* Optional: Extra tweaks for very small screens */
 @media (max-width: 600px) {

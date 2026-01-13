@@ -5,6 +5,7 @@ import Tabs from "./components/tabs"
 import Projects from "./components/Projects"
 import Skills from "./components/Skills"
 import GithubContributions from "./components/GithubContributions"
+import Socials from "./components/Socials"
 function App() {
 
   return (
@@ -13,6 +14,7 @@ function App() {
         <GithubContributions />
         <Projects />
         <Skills />
+        <Socials />
       {/* <section>
         <Tabs />
       </section> */}

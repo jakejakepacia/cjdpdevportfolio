@@ -5,7 +5,11 @@ import TonelyoKeyFeatures from "./TonelyoFeatures";
 import { useRef, useState } from "react";
 import toneldemo from "../assets/tonelvideo.mp4";
 import VideoPlayer from "./VideoPlayer"; // default export matches
-
+import TonelyoHome from "../assets/tonelyo-home.jpg"
+import TonelyoCart from "../assets/tonelyo-cart.jpg"
+import TonelyoProduct from "../assets/tonelyo-productpage.jpg"
+import TonelyoStores from "../assets/tonelyo-stores.jpg"
+import TonelyoStoreMenu from "../assets/tonelyo-store-menu.jpg"
 function Projects(){
 
 const [showPopup, setShowPopup] = useState(false);
@@ -16,7 +20,14 @@ const projects = [
     description: "Customer app for ordering catering",
     logo: tonelLogo,
     video: toneldemo,
-    features: <TonelyoKeyFeatures />
+    features: <TonelyoKeyFeatures />,
+    previews: [
+      TonelyoHome,
+      TonelyoCart,
+      TonelyoProduct,
+      TonelyoStores,
+      TonelyoStoreMenu
+    ]
   },
   {
     id: 2,
@@ -24,7 +35,8 @@ const projects = [
     description: "Some other description",
     logo: tonelLogo,
     video: toneldemo,
-    features: <TonelyoKeyFeatures />
+    features: <TonelyoKeyFeatures />,
+    previews: []
   },
   {
     id: 3,
@@ -32,7 +44,8 @@ const projects = [
     description: "Some other description",
     logo: tonelLogo,
     video: toneldemo,
-    features: <TonelyoKeyFeatures />
+    features: <TonelyoKeyFeatures />,
+     previews: []
   },
    {
     id: 4,
@@ -40,7 +53,8 @@ const projects = [
     description: "Some other description",
     logo: tonelLogo,
     video: toneldemo,
-    features: <TonelyoKeyFeatures />
+    features: <TonelyoKeyFeatures />,
+     previews: []
   },
    {
     id: 5,
@@ -48,7 +62,8 @@ const projects = [
     description: "Some other description",
     logo: tonelLogo,
     video: toneldemo,
-    features: <TonelyoKeyFeatures />
+    features: <TonelyoKeyFeatures />,
+     previews: []
   }
 ];
 
@@ -142,9 +157,25 @@ const [selectedProject, setSelectedProject] = useState(null);
 >
   {selectedProject && (
     <>
-      <h2>{selectedProject.title}</h2>
+      <div className="pop-up-header">
+      <img src={tonelLogo} />
+      <div>
+        <strong>{selectedProject.title}</strong>
+        <p>{selectedProject.description}</p>
+      </div>
+    
+      </div>
+   
       <div className="pop-up-body">
-        <VideoPlayer src={selectedProject.video} />
+        <strong>Preview</strong>
+        <div className="project-preview">
+          <video src={selectedProject.video} controls autoPlay loop />
+          {selectedProject.previews.map((img) => (
+
+             <img src={img} />
+          )) }
+        </div>
+     
         {selectedProject.features}
       </div>
     </>
