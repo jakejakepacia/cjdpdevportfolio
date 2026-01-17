@@ -2,6 +2,7 @@ import './landing.css'
 import jake from "../assets/jake-home.png"
 import arrow from "../assets/arrow.png"
 import mylogo from "../assets/cjdpdev.png"
+import { BiPhone, BiSolidPhone } from "react-icons/bi";
 
 import { Typewriter } from "react-simple-typewriter";
 import { useState } from 'react';
@@ -22,7 +23,13 @@ function Landing(){
          <div>
             <div className="page-nav">
                 <div className="logo"><img src={mylogo} /></div> 
-                <p className="scheduleCall" onClick={() => setShowScheduler(true)}>Schedule a Call</p>
+                <div  className="scheduleCall" onClick={() => setShowScheduler(true)}>
+                    <div className="call-icon">
+                        <BiSolidPhone size={20}/>
+                        </div>
+                        <p>Schedule Call</p>
+                </div>
+             
 
                
             </div>

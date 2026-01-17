@@ -8,6 +8,47 @@
     flex-wrap: wrap; /* allow items to wrap on small screens */
 }
 
+.msg-btn{
+    background: #e8e8e8;
+    border-radius: 50px;
+    width: 52px;
+    height: 52px;
+    transition: all 0.4 ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    align-items: center;
+    justify-content: center;
+}
+
+.msg-btn .icon{
+    font-size: 22px;
+    transition: all 0.4s ease;
+    position: absolute;
+    opacity: 1;
+      justify-content: center;
+}
+
+.msg-btn .text{
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.4s ease;
+}
+
+.msg-btn:hover{
+    background: #27b1fb;
+    width: 150px;
+    box-shadow: 0 6px 20px rgba(24,119,142,0.45);
+}
+
+.msg-btn:hover .icon{
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.msg-btn:hover .text{
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .logo img{
    height: 100px;
 }
@@ -17,7 +58,7 @@
 }
 
 .scheduleCall {
-  display: inline-block; /* allow padding and hover effect */
+  display:flex; /* allow padding and hover effect */
   font-size: 14px; /* slightly larger than 12px for readability */
   line-height: 1.5;
   cursor: pointer;
@@ -30,6 +71,27 @@
   font-weight: 500; /* medium weight */
   text-align: center;
   margin: 10px 0;
+  align-items: center;
+  justify-content: center;
+  width: 10px;
+  height: 20px;
+}
+
+.scheduleCall .call-icon{
+    font-size: 22px;
+    transition: all 0.4s ease;
+    position: absolute;
+    opacity: 1;
+      display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scheduleCall p{
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.4s ease;
+    font-size: 10px;
 }
 
 /* Hover effect */
@@ -38,8 +100,18 @@
   color: #fff; /* white text */
   transform: translateY(-2px); /* slight lift */
   box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* subtle shadow */
+  width: 80px;
 }
 
+.scheduleCall:hover .call-icon{
+       opacity: 0;
+    transform: translateY(-10px);
+}
+
+.scheduleCall:hover p{
+     opacity: 1;
+    transform: translateY(0);
+}
 
 .about-me {
     display: flex;
@@ -183,3 +255,4 @@
         gap: 10px;
     }
 }
+
