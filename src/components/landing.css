@@ -126,12 +126,6 @@
 
 
 
-.role-card {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  font-size: 14;
-}
-
 .role-header h3 {
   margin: 0;
   font-size: 0.8rem;

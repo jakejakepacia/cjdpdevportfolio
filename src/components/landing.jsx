@@ -106,6 +106,7 @@ function Landing(){
             <div>
                  <div className="role-card">
       <div className="role-header">
+        <h3>Currently</h3>
         <h3>Sole iOS Developer</h3>
         <span className="company">UnlimitedIA — US-Based Company</span>
         <span className="date">Aug 2024 – Present</span>
