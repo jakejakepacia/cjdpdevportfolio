@@ -124,8 +124,40 @@
     margin-bottom: 20px; /* spacing when stacked */
 }
 
+
+
+.role-card {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-size: 14;
+}
+
+.role-header h3 {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.company,
+.date {
+  display: block;
+  font-size: 0.7rem;
+  color: #555555;
+  margin-top: 2px;
+}
+
+.role-details {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.role-details li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+  color: #333333;
+  font-size: 0.7rem;
+}
+
 .roles {
-    display: flex;
     justify-content: space-between;
     margin-bottom: -20px;
 }

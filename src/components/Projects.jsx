@@ -10,10 +10,26 @@ import TonelyoCart from "../assets/tonelyo-cart.jpg"
 import TonelyoProduct from "../assets/tonelyo-productpage.jpg"
 import TonelyoStores from "../assets/tonelyo-stores.jpg"
 import TonelyoStoreMenu from "../assets/tonelyo-store-menu.jpg"
+import KachingaIcon from "../assets/kachinga-icon.png"
 function Projects(){
 
 const [showPopup, setShowPopup] = useState(false);
 const projects = [
+    {
+    id: 1,
+    title: "Kachinga",
+    description: "Mobile app and spend card designed to help parents empower their kids to learn how to manage money in a digital world.",
+    logo: KachingaIcon,
+    video: toneldemo,
+    features: <TonelyoKeyFeatures />,
+    previews: [
+      TonelyoHome,
+      TonelyoCart,
+      TonelyoProduct,
+      TonelyoStores,
+      TonelyoStoreMenu
+    ]
+  },
   {
     id: 1,
     title: "Tonelyo",
@@ -145,7 +161,6 @@ const [selectedProject, setSelectedProject] = useState(null);
       <hr />
       <p className="description-p">
         <strong>{project.title}</strong><br />
-        {project.description}
       </p>
     </div>
   ))}
@@ -158,7 +173,7 @@ const [selectedProject, setSelectedProject] = useState(null);
   {selectedProject && (
     <>
       <div className="pop-up-header">
-      <img src={tonelLogo} />
+      <img src={selectedProject.logo} />
       <div>
         <strong>{selectedProject.title}</strong>
         <p>{selectedProject.description}</p>
