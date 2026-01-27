@@ -5,6 +5,7 @@ import poteyoLogo from "../assets/Poteyo.png";
 import toneldemo from "../assets/tonelvideo.mp4";
 import kwizinyoDemo from "../assets/kwizinyoDemo.mp4";
 import KachingaIcon from "../assets/kachinga-icon.png";
+import KachingaDemo from "../assets/kachingaDemo.mp4"
 import { foodOrderingTechStack } from "./tonelyoTechStack.js"
 
 import {
@@ -26,6 +27,20 @@ import{
     kPreview8,
 } from "./kwizinyoPreviews"
 
+
+import{
+    kaPreview1,
+    kaPreview2,
+    kaPreview3,
+    kaPreview4,
+    kaPreview5,
+    kaPreview6,
+    kaPreview7,
+    kaPreview8,
+    kaPreview9,
+} from "./kachingaPreviews.js"
+
+
 export const projects = [
   {
     id: "kachinga",
@@ -33,13 +48,17 @@ export const projects = [
     description:
       "Pioneering developer (1 of 3) for a mobile app and spend card platform designed to help parents teach kids money management. Built the app using Xamarin/C# and developed backend RESTful APIs with ASP.NET. Designed and connected MySQL databases, created stored procedures, and implemented end-to-end full-stack functionality, enabling secure transactions, account management, and real-time updates.",
     logo: KachingaIcon,
-    video: toneldemo,
+    video: KachingaDemo,
     previews: [
-      TonelyoHome,
-      TonelyoCart,
-      TonelyoProduct,
-      TonelyoStores,
-      TonelyoStoreMenu,
+         kaPreview1,
+         kaPreview2,
+         kaPreview3,
+         kaPreview4,
+         kaPreview5,
+         kaPreview6,
+         kaPreview7,
+         kaPreview8,
+         kaPreview9,
     ],
     featuresComponent: "Tonelyo",
     techStack: "Tech Stack: Xamarin, C#, ASP.NET, RESTful APIs, MySQL, Stored Procedures, iOS/Android",
@@ -86,7 +105,7 @@ export const projects = [
     title: "Poteyo",
     description: "Developed the iOS app for delivery drivers to manage and complete orders efficiently. Implemented real-time order assignment and tracking, Apple Maps integration for route navigation, push notifications for new orders and updates, and in-app messaging for direct communication with customers or restaurants. Enabled status updates from pickup to delivery, ensuring seamless coordination across the platform.",
     logo: poteyoLogo,
-    video: kwizinyoDemo,
+    video: "",
     previews: [],
     featuresComponent: "Tonelyo",
      techStack: "Swift/UIKit, MVVM, REST APIs, Push Notifications, Maps, In-App Messaging",
