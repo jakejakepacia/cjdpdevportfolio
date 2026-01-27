@@ -1,0 +1,42 @@
+.tech-stack {
+  margin-top: 2rem;
+}
+
+.tech-stack h2 {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+/* Grid: 2 columns on desktop, 1 column on small screens */
+.tech-stack-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 1rem;
+}
+
+@media (max-width: 600px) {
+  .tech-stack-grid {
+    grid-template-columns: 1fr; /* stack to 1 column on mobile */
+  }
+}
+
+.tech-stack-card {
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+}
+
+.tech-stack-card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.tech-stack-card ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.tech-stack-card li {
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
