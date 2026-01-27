@@ -13,6 +13,7 @@ function ProjectPopup({ project, onClose }) {
           <strong>{project.title}</strong>
           <p className="description-p">{project.description}</p>
           <p className="description-p"><strong>Tech stack:</strong> {project.techStack}</p>
+          <p className="description-p"><strong>Company:</strong> {project.company}</p>
         </div>
       </div>
 

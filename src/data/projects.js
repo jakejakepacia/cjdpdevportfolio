@@ -43,7 +43,7 @@ export const projects = [
     ],
     featuresComponent: "Tonelyo",
     techStack: "Tech Stack: Xamarin, C#, ASP.NET, RESTful APIs, MySQL, Stored Procedures, iOS/Android",
-    company: "FilAm Software Technologies"
+    company: "FilAm Software Technology"
   },
   {
     id: "tonelyo",
