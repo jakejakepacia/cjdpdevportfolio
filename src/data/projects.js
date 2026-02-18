@@ -6,6 +6,7 @@ import toneldemo from "../assets/tonelvideo.mp4";
 import kwizinyoDemo from "../assets/kwizinyoDemo.mp4";
 import KachingaIcon from "../assets/kachinga-icon.png";
 import KachingaDemo from "../assets/kachingaDemo.mp4"
+import PoteyoDemo from "../assets/poteyo-demo.mp4"
 import { foodOrderingTechStack } from "./tonelyoTechStack.js"
 
 import {
@@ -105,10 +106,21 @@ export const projects = [
     title: "Poteyo",
     description: "Developed the iOS app for delivery drivers to manage and complete orders efficiently. Implemented real-time order assignment and tracking, Apple Maps integration for route navigation, push notifications for new orders and updates, and in-app messaging for direct communication with customers or restaurants. Enabled status updates from pickup to delivery, ensuring seamless coordination across the platform.",
     logo: poteyoLogo,
-    video: "",
+    video: PoteyoDemo,
     previews: [],
     featuresComponent: "Tonelyo",
      techStack: "Swift/UIKit, MVVM, REST APIs, Push Notifications, Maps, In-App Messaging",
      company: "UnlimitedIA"
-  }
+  },
+  //  {
+  //   id: "Tourism App",
+  //   title: "Tourism App",
+  //   description: "Developed a comprehensive iOS app for tourists to discover and book local attractions, restaurants, and activities. Implemented features such as location-based recommendations, in-app booking system, user reviews and ratings, and integrated payment processing for seamless transactions.",
+  //   logo: poteyoLogo,
+  //   video: "",
+  //   previews: [],
+  //   featuresComponent: "",
+  //    techStack: "React Native, TypeScript, REST APIs, Maps Integration",
+  //    company: "Self-initiated project"
+  // }
 ];
