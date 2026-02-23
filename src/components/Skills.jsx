@@ -10,6 +10,7 @@ import database from "../assets/database.png"
 import git from "../assets/git.png"
 import github from "../assets/github.png"
 import postman from "../assets/postman.png"
+import supabase from "../assets/supabase-icon.png"
 
 function Skills() {
   const [activeTab, setActiveTab] = useState("Front End");
@@ -31,6 +32,7 @@ function Skills() {
       { id: 5, name: "JWT", icon: jwt },
       { id: 6, name: "SQL Server", icon: database },
       { id: 7, name: "PostgreSQL", icon: database },
+      { id: 8, name: "Supabase", icon: supabase}
     ],
     "Other": [
       { id: 1, name: "Git", icon: git },
