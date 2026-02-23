@@ -1,12 +1,12 @@
-import kaPreview1 from "../assets/kaPreview1.jpg";
-import kaPreview2 from "../assets/kaPreview2.jpg";
-import kaPreview3 from "../assets/kaPreview3.jpg";
-import kaPreview4 from "../assets/kaPreview4.jpg";
-import kaPreview5 from "../assets/kaPreview5.jpg";
-import kaPreview6 from "../assets/kaPreview6.jpg";
-import kaPreview7 from "../assets/kaPreview7.jpg";
-import kaPreview8 from "../assets/kaPreview8.jpg";
-import kaPreview9 from "../assets/kaPreview9.jpg";
+import kaPreview1 from "../assets/kachinga/kaPreview1.jpg";
+import kaPreview2 from "../assets/kachinga/kaPreview2.jpg";
+import kaPreview3 from "../assets/kachinga/kaPreview3.jpg";
+import kaPreview4 from "../assets/kachinga/kaPreview4.jpg";
+import kaPreview5 from "../assets/kachinga/kaPreview5.jpg";
+import kaPreview6 from "../assets/kachinga/kaPreview6.jpg";
+import kaPreview7 from "../assets/kachinga/kaPreview7.jpg";
+import kaPreview8 from "../assets/kachinga/kaPreview8.jpg";
+import kaPreview9 from "../assets/kachinga/kaPreview9.jpg";
 
 export {
     kaPreview1,

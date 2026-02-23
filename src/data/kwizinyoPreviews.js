@@ -1,11 +1,11 @@
-import kPreview1 from "../assets/kPreview1.jpg";
-import kPreview2 from "../assets/kPreview2.jpg";
-import kPreview3 from "../assets/kPreview3.jpg";
-import kPreview4 from "../assets/kPreview4.jpg";
-import kPreview5 from "../assets/kPreview5.jpg";
-import kPreview6 from "../assets/kPreview6.jpg";
-import kPreview7 from "../assets/kPreview7.jpg";
-import kPreview8 from "../assets/kPreview8.jpg";
+import kPreview1 from "../assets/kwizinyo/kPreview1.jpg";
+import kPreview2 from "../assets/kwizinyo/kPreview2.jpg";
+import kPreview3 from "../assets/kwizinyo/kPreview3.jpg";
+import kPreview4 from "../assets/kwizinyo/kPreview4.jpg";
+import kPreview5 from "../assets/kwizinyo/kPreview5.jpg";
+import kPreview6 from "../assets/kwizinyo/kPreview6.jpg";
+import kPreview7 from "../assets/kwizinyo/kPreview7.jpg";
+import kPreview8 from "../assets/kwizinyo/kPreview8.jpg";
 
 export {
     kPreview1,

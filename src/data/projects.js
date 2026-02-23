@@ -1,12 +1,14 @@
 // src/data/projects.js
-import tonelLogo from "../assets/Tonelyo.png";
-import kwizinyoLogo from "../assets/Kwizinyo.png";
-import poteyoLogo from "../assets/Poteyo.png";
-import toneldemo from "../assets/tonelvideo.mp4";
-import kwizinyoDemo from "../assets/kwizinyoDemo.mp4";
-import KachingaIcon from "../assets/kachinga-icon.png";
-import KachingaDemo from "../assets/kachingaDemo.mp4"
-import PoteyoDemo from "../assets/poteyo-demo.mp4"
+import tonelLogo from "../assets/tonelyo/Tonelyo.png";
+import kwizinyoLogo from "../assets/kwizinyo/Kwizinyo.png";
+import poteyoLogo from "../assets/poteyo/Poteyo.png";
+import toneldemo from "../assets/tonelyo/tonelvideo.mp4";
+import kwizinyoDemo from "../assets/kwizinyo/kwizinyoDemo.mp4";
+import KachingaIcon from "../assets/kachinga/kachinga-icon.png";
+import KachingaDemo from "../assets/kachinga/kachingaDemo.mp4"
+import PoteyoDemo from "../assets/poteyo/poteyo-demo.mp4"
+import TourismLogo from "../assets/tourism/tourismapp.png"
+import TourismDemo from "../assets/tourism/demo.mp4"
 import { foodOrderingTechStack } from "./tonelyoTechStack.js"
 
 import {
@@ -41,6 +43,14 @@ import{
     kaPreview9,
 } from "./kachingaPreviews.js"
 
+import {
+   Home,
+    Details,
+    DiscoverList,
+    DiscoverMap,
+    Saved,
+    Profile,
+} from "./tourismPreviews.js"
 
 export const projects = [
   {
@@ -79,7 +89,7 @@ export const projects = [
       TonelyoStoreMenu,
     ],
     featuresComponent: "Tonelyo",
-     techStack: "Swift/UIKit, MVVM, REST APIs, Push Notifications, Maps, In-App Messaging",
+     techStack: "Swift/UIKit, MVVM, REST APIs, Fire base Push Notifications, Maps, In-App Messaging",
      company: "UnlimitedIA"
   },
   {
@@ -98,7 +108,7 @@ export const projects = [
         kPreview7,
         kPreview8],
     featuresComponent: "Tonelyo",
-    techStack: "Swift/UIKit, MVVM, REST APIs, Push Notifications, Maps, In-App Messaging",
+    techStack: "Swift/UIKit, MVVM, REST APIs, Firebase Push Notifications, Maps, In-App Messaging",
      company: "UnlimitedIA"
   },
   {
@@ -109,18 +119,25 @@ export const projects = [
     video: PoteyoDemo,
     previews: [],
     featuresComponent: "Tonelyo",
-     techStack: "Swift/UIKit, MVVM, REST APIs, Push Notifications, Maps, In-App Messaging",
+     techStack: "Swift/UIKit, MVVM, REST APIs, Firebase Push Notifications, Maps, In-App Messaging",
      company: "UnlimitedIA"
   },
-  //  {
-  //   id: "Tourism App",
-  //   title: "Tourism App",
-  //   description: "Developed a comprehensive iOS app for tourists to discover and book local attractions, restaurants, and activities. Implemented features such as location-based recommendations, in-app booking system, user reviews and ratings, and integrated payment processing for seamless transactions.",
-  //   logo: poteyoLogo,
-  //   video: "",
-  //   previews: [],
-  //   featuresComponent: "",
-  //    techStack: "React Native, TypeScript, REST APIs, Maps Integration",
-  //    company: "Self-initiated project"
-  // }
+   {
+    id: "Tourism App",
+    title: "Tourism App",
+    description: "Developed a comprehensive iOS app for tourists to discover and book local attractions, restaurants, and activities. Implemented features such as location-based recommendations, in-app booking system, user reviews and ratings, and integrated payment processing for seamless transactions.",
+    logo: TourismLogo,
+    video: TourismDemo,
+    previews: [
+       Home,
+    Details,
+    DiscoverList,
+    DiscoverMap,
+    Saved,
+    Profile
+    ],
+    featuresComponent: "",
+     techStack: "React Native Expo, TypeScript, JS, REST APIs, Maps Integration",
+     company: "Self-initiated project"
+  }
 ];

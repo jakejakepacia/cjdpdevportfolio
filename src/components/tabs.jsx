@@ -1,9 +1,9 @@
 
 import "./tab.css";
 import { useRef, useState } from "react";
-import toneldemo from "../assets/tonelvideo.mp4";
+import toneldemo from "../assets/tonelyo/tonelvideo.mp4";
 import VideoPlayer from "./VideoPlayer"; // default export matches
-import tonelLogo from "../assets/tonel-logo.png"
+import tonelLogo from "../assets/tonelyo/tonel-logo.png"
 import Popup from "./Popup";
 import TonelyoKeyFeatures from "./TonelyoFeatures";
 
