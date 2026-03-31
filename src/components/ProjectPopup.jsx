@@ -12,8 +12,24 @@ function ProjectPopup({ project, onClose }) {
         <div>
           <strong>{project.title}</strong>
           <p className="description-p">{project.description}</p>
-          <p className="description-p"><strong>Tech stack:</strong> {project.techStack}</p>
-          <p className="description-p"><strong>Company:</strong> {project.company}</p>
+          <p className="description-p">
+            <strong>Tech stack:</strong> {project.techStack}
+          </p>
+          <p className="description-p">
+            <strong>Company:</strong> {project.company}
+          </p>
+          {project.githublink && (
+            <p className="description-p">
+              <strong>GitHub:</strong>{" "}
+              <a
+                href={project.githublink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View on GitHub
+              </a>
+            </p>
+          )}
         </div>
       </div>
 
@@ -26,8 +42,6 @@ function ProjectPopup({ project, onClose }) {
             <img key={index} src={img} alt="preview" />
           ))}
         </div>
-
-
       </div>
     </Popup>
   );
